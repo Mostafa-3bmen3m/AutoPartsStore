@@ -1,6 +1,12 @@
 "use client"; 
 import React, { useState, useEffect } from 'react';
 
+const images = {
+  brakes: 'https://images.unsplash.com/photo-1599252084961-d779f45479ae?q=80&w=600&auto=format&fit=crop',
+  pump: 'https://images.unsplash.com/photo-1635732646038-0a1a88aa7e22?q=80&w=600&auto=format&fit=crop',
+  suspension: 'https://images.unsplash.com/photo-1619641262963-c3c2f0f49f48?q=80&w=600&auto=format&fit=crop',
+};
+
 export default function HomePage() {
   const [lang, setLang] = useState('en'); 
   const [view, setView] = useState('home'); 
@@ -57,9 +63,9 @@ export default function HomePage() {
   const t = translations[lang];
 
   const products = [
-    { id: 1, name: lang === 'en' ? 'Ceramic Brake Pads' : 'تيل فرامل سيراميك', price: `1,250 ${t.currency}`, category: t.brakes, image: 'https://placehold.co/400x300/1e293b/white?text=Brake+Pads' },
-    { id: 2, name: lang === 'en' ? 'High-Flow Water Pump' : 'طلمبة مياه أصلية', price: `1,950 ${t.currency}`, category: t.pumps, image: 'https://placehold.co/400x300/1e293b/white?text=Water+Pump' },
-    { id: 3, name: lang === 'en' ? 'Front Shock Absorber' : 'مساعدين أمامية', price: `2,800 ${t.currency}`, category: t.suspension, image: 'https://placehold.co/400x300/1e293b/white?text=Suspension' },
+    { id: 1, name: lang === 'en' ? 'Ceramic Brake Pads' : 'تيل فرامل سيراميك', price: `1,250 ${t.currency}`, category: t.brakes, image: images.brakes },
+    { id: 2, name: lang === 'en' ? 'High-Flow Water Pump' : 'طلمبة مياه أصلية', price: `1,950 ${t.currency}`, category: t.pumps, image: images.pump },
+    { id: 3, name: lang === 'en' ? 'Front Shock Absorber' : 'مساعدين أمامية', price: `2,800 ${t.currency}`, category: t.suspension, image: images.suspension },
   ];
 
   useEffect(() => {
