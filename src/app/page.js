@@ -81,7 +81,7 @@ export default function HomePage() {
       <div className="min-h-screen bg-white p-8" dir={lang === 'ar' ? 'rtl' : 'ltr'}>
         <button onClick={() => setView('home')} className="mb-6 font-bold text-blue-900">{t.back}</button>
         <div className="max-w-md mx-auto border border-slate-100 p-8 rounded-3xl shadow-xl mt-10">
-          <h2 className="text-3xl font-black mb-8 text-slate-900">{t.loginHeader}</h2>
+          <h2 className="text-3xl font-black mb-8 text-slate-500">{t.loginHeader}</h2>
           <input type="tel" placeholder={t.phonePlaceholder} className="w-full p-4 bg-slate-50 rounded-xl mb-4 outline-none focus:ring-2 focus:ring-blue-900 border border-slate-100" />
           <button onClick={() => setView('otp')} className="w-full bg-blue-900 text-white py-4 rounded-xl font-bold shadow-lg">
             {t.sendCode}
