@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from 'react';
 
 const images = {
-  brakes: 'https://images.unsplash.com/photo-1599252084961-d779f45479ae?q=80&w=600&auto=format&fit=crop',
-  pump: 'https://images.unsplash.com/photo-1635732646038-0a1a88aa7e22?q=80&w=600&auto=format&fit=crop',
-  suspension: 'https://images.unsplash.com/photo-1619641262963-c3c2f0f49f48?q=80&w=600&auto=format&fit=crop',
+  brakes: 'https://d36dbl6v34yjc1.cloudfront.net/eyJidWNrZXQiOiJwcm9kdWN0LWltYWdlcy1zaGFyZWQtMjAyMjA5MTUxMjM4MzI1Njk4MDAwMDAwMDEiLCJrZXkiOiJzdHJ1XC8xNzE2OTFsMTcxNjkxci1wMDQtMTE5OXgxNDYxLXlscG1kdXFkeXRoM3Nnbm54NW5iaHN3cXBqcS5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp0cnVlLCJqcGVnIjp0cnVlLCJyZXNpemUiOnsid2lkdGgiOjg4MCwiaGVpZ2h0Ijo4ODAsImZpdCI6Imluc2lkZSJ9fX0=',
+  pump: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcFhD9pT7Lab7rtieUWTGgkDuUeXvfw123c5S3MtXqphlrQnN5LKGfrefK&s=10',
+  suspension: 'https://m.media-amazon.com/images/I/61M2I-yo-cS._AC_UF894,1000_QL80_FMwebp_.jpg',
 };
 
 export default function HomePage() {
