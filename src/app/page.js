@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from 'react';
 
 const images = {
-  pump: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcFhD9pT7Lab7rtieUWTGgkDuUeXvfw123c5S3MtXqphlrQnN5LKGfrefK&s=10',
-  suspension: 'https://m.media-amazon.com/images/I/61M2I-yo-cS._AC_UF894,1000_QL80_FMwebp_.jpg',
-  brakes: 'https://d36dbl6v34yjc1.cloudfront.net/eyJidWNrZXQiOiJwcm9kdWN0LWltYWdlcy1zaGFyZWQtMjAyMjA5MTUxMjM4MzI1Njk4MDAwMDAwMDEiLCJrZXkiOiJzdHJ1XC8xNzE2OTFsMTcxNjkxci1wMDQtMTE5OXgxNDYxLXlscG1kdXFkeXRoM3Nnbm54NW5iaHN3cXBqcS5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp0cnVlLCJqcGVnIjp0cnVlLCJyZXNpemUiOnsid2lkdGgiOjg4MCwiaGVpZ2h0Ijo4ODAsImZpdCI6Imluc2lkZSJ9fX0=',
+  pump: 'https://m.media-amazon.com/images/I/61M2I-yo-cS._AC_UF894,1000_QL80_FMwebp_.jpg',
+  suspension: 'https://d36dbl6v34yjc1.cloudfront.net/eyJidWNrZXQiOiJwcm9kdWN0LWltYWdlcy1zaGFyZWQtMjAyMjA5MTUxMjM4MzI1Njk4MDAwMDAwMDEiLCJrZXkiOiJzdHJ1XC8xNzE2OTFsMTcxNjkxci1wMDQtMTE5OXgxNDYxLXlscG1kdXFkeXRoM3Nnbm54NW5iaHN3cXBqcS5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp0cnVlLCJqcGVnIjp0cnVlLCJyZXNpemUiOnsid2lkdGgiOjg4MCwiaGVpZ2h0Ijo4ODAsImZpdCI6Imluc2lkZSJ9fX0=',
+  brakes: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcFhD9pT7Lab7rtieUWTGgkDuUeXvfw123c5S3MtXqphlrQnN5LKGfrefK&s=10',
 };
 
 export default function HomePage() {
@@ -81,7 +81,7 @@ export default function HomePage() {
       <div className="min-h-screen bg-white p-8" dir={lang === 'ar' ? 'rtl' : 'ltr'}>
         <button onClick={() => setView('home')} className="mb-6 font-bold text-blue-900">{t.back}</button>
         <div className="max-w-md mx-auto border border-slate-100 p-8 rounded-3xl shadow-xl mt-10">
-          <h2 className="text-3xl font-black mb-8 text-slate-500">{t.loginHeader}</h2>
+          <h2 className="text-3xl font-black mb-8 text-blue-900">{t.loginHeader}</h2>
           <input type="tel" placeholder={t.phonePlaceholder} className="w-full p-4 bg-slate-50 rounded-xl mb-4 outline-none focus:ring-2 focus:ring-blue-900 border border-slate-100" />
           <button onClick={() => setView('otp')} className="w-full bg-blue-900 text-white py-4 rounded-xl font-bold shadow-lg">
             {t.sendCode}
